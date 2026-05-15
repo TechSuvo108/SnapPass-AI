@@ -3,7 +3,7 @@
  * Centralised so controllers and services import from one place.
  */
 
-module.exports = {
+export default {
   port: parseInt(process.env.PORT, 10) || 5000,
   nodeEnv: process.env.NODE_ENV || "development",
 
@@ -15,7 +15,7 @@ module.exports = {
     allowedMimeTypes: ["image/jpeg", "image/png", "image/webp"],
   },
 
-  corsOrigin: process.env.CORS_ORIGIN || "http://localhost:3000",
+  corsOrigin: process.env.CORS_ORIGIN || "http://localhost:5173",
 
   // Database config — ready for MongoDB integration
   // db: {
